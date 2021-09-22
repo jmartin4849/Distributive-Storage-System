@@ -11,7 +11,7 @@ The storage server is implemented using multithreading and Read Write locks in o
 
 Here is a simple diagram demenstrating how the client-server communication works at a high level.
 
-*INSERT PICTURE HERE*
+![Alt text](Images/m1-1.png)
 
 # Milestone 2
 THis is Milestone 2
