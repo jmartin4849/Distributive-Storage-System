@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.9
+Created-By: 15.0.2+7-27 (Oracle Corporation)
+built-by: johna
+Main-Class: app_kvServer.KVServer
+Class-Path: libs/log4j-1.2.17.jar:libs/junit-4.10.jar:libs/json-202011
+ 15.jar
+
