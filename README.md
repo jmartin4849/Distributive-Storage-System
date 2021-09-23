@@ -27,7 +27,7 @@ The hash range each server serves can change upon the addition of a new server t
 When the client sends a request to a server that doesn't service the specified hash the server will then respond with a NOTRESPONSIBLEFORHASH error to inform the client to reconnect to the correct server.
 
 Here is a diagram of the high level model
-![Alt text](Images/m2 Model.png)
+![Alt text](Images/m2-1.png)
 # Milestone 3
 This is Milestone 3
 # Milestone 4
