@@ -29,6 +29,16 @@ When the client sends a request to a server that doesn't service the specified h
 Here is a diagram of the high level model
 ![Alt text](Images/m2-1.png)
 # Milestone 3
-This is Milestone 3
+In Milestone 3 the primary objective was to implement replication with eventual consistency to hold replicates at the 2 successer nodes and to maintain this replication server scaling and server failure.
+
+Basic replication is acheived by each put request communicating with the coordinator node and then the coordinating node forwards the replicates to the 2 successor nodes.  This ensures eventual consistency.  Get requests can then be serviced by either the coordinator or the successor nodes as they are read-only.
+
+Scalability is implemented  by communication from the ECS to the nodes when the metadata changes.  Similar to before data must be moved between nodes but this time the replication data will also have to be moved adding complexity to the problem.
+
+Failure detection and replication is implemented from the ECS nodes.  When one fails Zookeeper notifies the system.  Then the eplication data stored can be used to restore the lost data to the coordinator.
+
+Here is a simple diagram of how the replication works with the coordinator and successors.
+![Alt text](Images/m3-1.png)
+
 # Milestone 4
 This is Milestone 4
