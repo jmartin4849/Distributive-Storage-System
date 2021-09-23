@@ -1,6 +1,8 @@
 # Distributive-Storage-System
 Distributive Storage System to implement a scalable key-value storage system capable of responding to high volume client storage requests seamlessly.
 
+Unit tests were performed using Junit.
+
 Created by Johnathon Martin and Lunjun Zhang
 # Milestone 1
 The first milestone for this project was implementing a client server system capable of processing put, get and remove requests.
